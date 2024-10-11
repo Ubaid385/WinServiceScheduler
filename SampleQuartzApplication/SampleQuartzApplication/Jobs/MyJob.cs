@@ -16,6 +16,7 @@ namespace SampleQuartzApplication.Jobs
         {
             try
             {
+                //Writes log on Console and at the log directory
                 await Console.Out.WriteLineAsync($"MyJob Started!!!");
                 logManager.createLog(LogType.INFO, $"Initializing MyJob");
             }
